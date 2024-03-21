@@ -38,6 +38,11 @@ public class Person {
         this.salary = salary;
     }
 
+    public String toFileLine() {
+        String str = name + " " + age + " " + salary;
+        return str;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("model.Person{");
